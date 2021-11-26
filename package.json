@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --open",
-    "watch": "parcel dev watch src/index.html --open",
-    "build": "parcel build src/index.html"
+    "dev": "rm -rf dist/* && parcel src/pages/*.html --open",
+    "watch": "rm -rf dist/* && parcel dev watch src/pages/*.html --open",
+    "build": "rm -rf dist/* && parcel build src/pages/*.html --no-content-hash"
   },
   "keywords": [],
   "author": "",

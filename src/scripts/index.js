@@ -1,4 +1,7 @@
 (function () {
-  const test = [1, 2, 3].map(n => n + 1)
-  console.log(test)
+  const test = {
+    transpiling: "Transpiled!"
+  }
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+  console.log(test?.transpiling)
 }())
